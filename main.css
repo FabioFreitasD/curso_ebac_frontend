@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    background-color: rgb(109, 109, 221);
+    color: white;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+header p {
+    font-size: 21px;
+}
+
+body {
+    background-color: rgb(223, 241, 235);
+}
+
+form {
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+form input {
+    text-align: center;
+    width: 420px;
+    margin-bottom: 4px;
+    margin-right: 10px;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: .5s;
+    cursor: pointer;
+    background: none;
+    background-image: linear-gradient(to right, #2ad1f8, #8a58b9);
+    color: white;
+    border: 0.5px, solid,  #6e35a3;
+}
+
+li {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    header {
+        text-align: center;
+        background-color: rgb(109, 109, 221);
+        color: white;
+        padding: 8px;
+        margin-bottom: 8px;
+    }
+    
+    header h1 {
+        font-size: 40px;
+    }
+    
+    header p {
+        font-size: 21px;
+    }
+    
+    body {
+        background-color: rgb(223, 241, 235);
+    }
+    
+    form {
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    form input {
+        text-align: center;
+        width: 420px;
+        margin-bottom: 4px;
+        margin-right: 10px;
+        font-size: 20px;
+        padding: 8px;
+        border-radius: 8px;
+    }
+    
+    button {
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 8px;
+        transition: .5s;
+        cursor: pointer;
+        background: none;
+        background-image: linear-gradient(to right, #2ad1f8, #8a58b9);
+        color: white;
+        border: 0.5px, solid,  #6e35a3;
+    }
+    
+    li {
+        list-style-type: circle;
+        cursor: pointer;
+        position: relative;
+        text-align: center;
+        font-size: 20px;
+        font-style: italic;
+    }
+    
+    .finalizado {
+        text-decoration: line-through;
+        list-style-type: circle;
+    }
+    
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+}
