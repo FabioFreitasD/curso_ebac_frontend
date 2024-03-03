@@ -1,0 +1,15 @@
+.container {
+    max-width: 680px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: blue;
+}
+
+form {
+    height: 300px;
+    overflow: auto; /* adiciona ao formulario uma barra de rolagem se necessario.*/
+    resize: none; /*evita que o formulario possa ser redimensionado pelo usuario.*/
+}
