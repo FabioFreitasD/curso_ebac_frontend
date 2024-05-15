@@ -32,3 +32,4 @@ exports.watch = function() {
 }
 exports.javascript = comprimeJs;
 exports.images = minifyImages;
+gulp.task('default', gulp.series(minifyImages, compilaSass, comprimeJs));
