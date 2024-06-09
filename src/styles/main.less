@@ -1,0 +1,185 @@
+@import "mapas.less";
+@breakpointMobile: ~"(max-width: 767px)";
+@breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #colors [corDosite];
+}
+
+.container {
+    height: 260px;
+    background: #fff;
+    max-width: 410px;
+    border-radius: 2px;
+    padding: 16px 25px;
+    transition: height 0.5s ease;
+
+    .active {
+        height: 530px;
+        opacity: 1;
+        pointer-events: auto;
+        transition: opacity 0.5s ease;
+    }
+
+    .form {
+        padding: 20px 0 25px;
+
+        input {
+            padding: 0 17px;
+            font-size: 18px;
+            border: 1px solid #999;
+        }
+
+        button {
+            color: #fff;
+            background: #colors [buttonColor];
+            margin-top: 20px;
+            font-size: 17px;
+            cursor: pointer;
+            transition: all 0.5s ease;
+        }
+    }
+
+    :where(input, button) {
+        width: 100%;
+        height: 55px;
+        border: none;
+        outline: none;
+        border-radius: 7px;
+    }
+
+    .qr-code {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 33px 0;
+        opacity: 1;
+        pointer-events: auto;
+        transition: opacity 0.5s ease;
+
+        img {
+            width: 220px;
+            height: auto;
+        }
+    }
+}
+
+.container .form button:hover {
+    background: #b8958a;
+}
+
+header {
+
+    h1 {
+        text-align: center;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    p {
+        color: #colors [corDoText];
+        font-size: 16px;
+        text-align: center;
+        margin-top: 5px;
+    }
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+
+    li {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        list-style: none;
+        img {
+            height: 50px;
+            transition: all ease 0.3s;
+        }
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+}
+
+@media @breakpointMobile {
+    body {
+        flex-direction: column;
+        background: #colors[corMobile];
+    }
+
+    .container {
+        max-width: 90%;
+        margin: 8px 12px;
+    }
+
+    .container .form input,
+    .container :where(input, button) {
+        height: 30px;
+    }
+
+    header {
+        h1 {
+            font-size: 16px;
+
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    .social-links {
+        li {
+            img {
+                height: 30px;
+            }
+        }
+    }
+}
+
+@media @breakpointTablet {
+    body {
+        flex-direction: column;
+        background: #colors [corTablet];
+    }
+
+    .container {
+        max-width: 90%;
+        margin: 20px 30px;
+    }
+
+    .container .form input,
+    .container :where(input, button) {
+        height: 65px;
+    }
+
+    header {
+
+        h1 {
+        font-size: 26px;
+        }
+
+        p {
+            font-size: 21px;
+        }
+    }
+
+}
